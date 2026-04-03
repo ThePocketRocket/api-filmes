@@ -22,3 +22,17 @@ Foi utilizado o Git Flow simplificado:
 
 Motivo:
 Esse fluxo permite desenvolver novas funcionalidades sem afetar a versão principal da aplicação.
+
+## Github Actions
+
+1. Workflow de Push
+
+O workflow push-workflow é acionado sempre que ocorre um push nas seguintes branches:
+- master
+- feature/*
+- bugfix/*
+
+2. Workflow de Pull Request
+
+O workflow pull-request-workflow é acionado sempre que um Pull Request é aberto ou atualizado com destino à branch:
+- master
